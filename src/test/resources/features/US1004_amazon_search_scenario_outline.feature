@@ -14,4 +14,5 @@ Feature: US1004_amazon_search_scenario_outline
       | samsung   |
       | headphone |
       | pencil    |
+      | books     |
 
