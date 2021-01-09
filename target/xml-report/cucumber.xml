@@ -1,117 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="247.246">
-<testcase classname="US1001 Amazon_Search_Page" name="TC01 amazon arama testi" time="46.186">
-<system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
-And iphone icin arama yapar.................................................passed
-Then sonucun iphone icerdigini test eder....................................passed
-Given kullanici amazon anasayfaya gider.....................................passed
-And teapot icin arama yapar.................................................passed
-Then sonucun teapot icerdigini test eder....................................passed
-Given kullanici amazon anasayfaya gider.....................................passed
-And flower icin arama yapar.................................................passed
-Then sonucun flower icerdigini test eder....................................passed
-And kullanici sayfayi kapatir...............................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.207">
+<testcase classname="US1011_AutomationPractice" name="TC14_Kullanici_yeni_giris_olusturabilmeli" time="24.351">
+<system-out><![CDATA[When kullanici "Ap_url" anasayfaya gider....................................passed
+Then Ap sign_in tusuna tiklar...............................................passed
+And ap email kutusuna email bilgisi yazar...................................passed
+And ap create an account tusuna basar.......................................passed
+And ap cinsiyet secer.......................................................passed
+And ap isim girer...........................................................passed
+And ap soyisim girer........................................................passed
+And ap password girer.......................................................passed
+And pagedown tusuna basar...................................................passed
+And "1" saniye bekler.......................................................passed
+And ap gun secer............................................................passed
+And ap ay secer.............................................................passed
+And ap yil secer............................................................passed
+And ap adres isim yazar.....................................................passed
+And ap adres soyisim yazar..................................................passed
+And ap sirket ismi yazar....................................................passed
+And ap adress yazar.........................................................passed
+And ap adress2 yazar........................................................passed
+And ap adres sehir yazar....................................................passed
+And ap state dropdown secer.................................................passed
+And ap adres zip kod yazar..................................................passed
+And pagedown tusuna basar...................................................passed
+And "1" saniye bekler.......................................................passed
+And ap country dropdown secer...............................................passed
+And bilgi ekleme yapar......................................................passed
+And home phone yazar........................................................passed
+And reference alanini temizler..............................................passed
+And reference yazar.........................................................passed
+And ap register butonuna basar..............................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="US1002_amazon_search_background" name="TC02_amazon_iphone_arama_testi" time="20.456">
-<system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
-And iphone icin arama yapar.................................................passed
-Then sonucun iphone icerdigini test eder....................................passed
-And kullanici sayfayi kapatir...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1002_amazon_search_background" name="TC03_amazon_teapot_arama_testi" time="22.167">
-<system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
-And teapot icin arama yapar.................................................passed
-Then sonucun teapot icerdigini test eder....................................passed
-And kullanici sayfayi kapatir...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1002_amazon_search_background" name="TC04_amazon_flower_arama_testi" time="19.326">
-<system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
-And flower icin arama yapar.................................................passed
-Then sonucun flower icerdigini test eder....................................passed
-And kullanici sayfayi kapatir...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1003_amazon_search_parametreli" name="TC05_parametre_kullanma" time="16.758">
-<failure message="" type="java.lang.AssertionError"><![CDATA[When kullanici amazon anasayfaya gider......................................passed
-And "abdullah" icin arama yapar.............................................passed
-Then sonucun "cemal" icerdigini test eder...................................failed
-And kullanici sayfayi kapatir...............................................skipped
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.AmazonStepDefinitions.sonucun_icerdigini_test_eder(AmazonStepDefinitions.java:65)
-	at ✽.sonucun "cemal" icerdigini test eder(file:///C:/Users/Admin/IdeaProjects/mycucumberframework/src/test/resources/features/US1003_amazon_search_parametreli.feature:8)
-]]></failure>
-</testcase>
-<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama" time="19.265">
-<system-out><![CDATA[When kullanici amazon anasayfaya gider......................................passed
-Then "yasin" icin arama yapar...............................................passed
-And sonucun "yasin" icerdigini test eder....................................passed
-And kullanici sayfayi kapatir...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_2" time="17.731">
-<system-out><![CDATA[When kullanici amazon anasayfaya gider......................................passed
-Then "samsung" icin arama yapar.............................................passed
-And sonucun "samsung" icerdigini test eder..................................passed
-And kullanici sayfayi kapatir...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_3" time="33.654">
-<system-out><![CDATA[When kullanici amazon anasayfaya gider......................................passed
-Then "headphone" icin arama yapar...........................................passed
-And sonucun "headphone" icerdigini test eder................................passed
-And kullanici sayfayi kapatir...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_4" time="30.076">
-<system-out><![CDATA[When kullanici amazon anasayfaya gider......................................passed
-Then "pencil" icin arama yapar..............................................passed
-And sonucun "pencil" icerdigini test eder...................................passed
-And kullanici sayfayi kapatir...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_5" time="20.499">
-<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class='a-section a-spacing-small a-spacing-top-small']&quot;}&#10;  (Session info: chrome=87.0.4280.88)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'RECEP', ip: '192.168.0.20', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_261'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51119}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 580987fd485b94a9a0749953449a9c22&#10;*** Element info: {Using=xpath, value=//div[@class='a-section a-spacing-small a-spacing-top-small']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When kullanici amazon anasayfaya gider......................................passed
-Then "books" icin arama yapar...............................................passed
-And sonucun "books" icerdigini test eder....................................failed
-And kullanici sayfayi kapatir...............................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='a-section a-spacing-small a-spacing-top-small']"}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RECEP', ip: '192.168.0.20', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51119}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 580987fd485b94a9a0749953449a9c22
-*** Element info: {Using=xpath, value=//div[@class='a-section a-spacing-small a-spacing-top-small']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.getText(Unknown Source)
-	at stepdefinitions.AmazonStepDefinitions.sonucun_icerdigini_test_eder(AmazonStepDefinitions.java:65)
-	at ✽.sonucun "books" icerdigini test eder(file:///C:/Users/Admin/IdeaProjects/mycucumberframework/src/test/resources/features/US1004_amazon_search_scenario_outline.feature:9)
-]]></failure>
 </testcase>
 </testsuite>
