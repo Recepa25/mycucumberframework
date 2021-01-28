@@ -1,417 +1,93 @@
 [
   {
-    "line": 11,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-01-07T05:12:01.141Z",
-        "before": [
-          {
-            "result": {
-              "duration": 5000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setup()"
-            }
-          }
-        ],
-        "line": 13,
-        "name": "TC14_Kullanici_yeni_giris_olusturabilmeli",
+        "start_timestamp": "2021-01-26T20:42:31.634Z",
+        "line": 11,
+        "name": "TC_22 kullanici DBUtils ile veri okur",
         "description": "",
-        "id": "us1011-automationpractice;tc14-kullanici-yeni-giris-olusturabilmeli",
-        "after": [
-          {
-            "result": {
-              "duration": 577000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "us1014-dbread;tc-22-kullanici-dbutils-ile-veri-okur",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 11408000000,
+              "duration": 3000000,
               "status": "passed"
+            },
+            "line": 12,
+            "name": "kullanici DBUtils ile CK_Hotels veritabanina baglanir",
+            "match": {
+              "location": "dbStepdefinitions.DbReadDBUtils.kullanici_db_utils_ile_ck_hotels_veritabanina_baglanir()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat utilities.DBUtils.executeQuery(DBUtils.java:36)\r\n\tat dbStepdefinitions.DbReadDBUtils.kullanici_db_utils_ile_tablosundaki_verilerini_alir(DbReadDBUtils.java:17)\r\n\tat ✽.kullanici DBUtils ile \"tHOTELROOM\" tablosundaki \"Price\" verilerini alir(file:///C:/Users/Admin/IdeaProjects/mycucumberframework/src/test/resources/features/US1014_DbRead.feature:13)\r\n",
+              "duration": 4000000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "kullanici DBUtils ile \"tHOTELROOM\" tablosundaki \"Price\" verilerini alir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tHOTELROOM\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Price\"",
+                  "offset": 48
+                }
+              ],
+              "location": "dbStepdefinitions.DbReadDBUtils.kullanici_db_utils_ile_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
             },
             "line": 14,
-            "name": "kullanici \"Ap_url\" anasayfaya gider",
+            "name": "kullanici DBUtils ile \"Price\" sutunundaki verileri okur",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Ap_url\"",
-                  "offset": 10
+                  "val": "\"Price\"",
+                  "offset": 22
                 }
               ],
-              "location": "stepdefinitions.BestbuyStepDefinitions.kullanici_anasayfaya_gider(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2263000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Ap sign_in tusuna tiklar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_sign_in_tusuna_tiklar()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1076000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "ap email kutusuna email bilgisi yazar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_email_kutusuna_email_bilgisi_yazar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 152000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "ap create an account tusuna basar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_create_an_account_tusuna_basar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1684000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "ap cinsiyet secer",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_cinsiyet_secer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 176000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "ap isim girer",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_isim_girer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 187000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "ap soyisim girer",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_soyisim_girer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 330000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "ap password girer",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_password_girer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 205000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "pagedown tusuna basar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.pagedown_tusuna_basar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1024000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "\"1\" saniye bekler",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1\"",
-                  "offset": 0
-                }
-              ],
-              "location": "stepdefinitions.DataTableStepDefinitions.saniyeBekler(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 236000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "ap gun secer",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_gun_secer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 208000000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "ap ay secer",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_ay_secer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 169000000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "ap yil secer",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_yil_secer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 136000000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "ap adres isim yazar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_adres_isim_yazar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 130000000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "ap adres soyisim yazar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_adres_soyisim_yazar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 150000000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "ap sirket ismi yazar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_sirket_ismi_yazar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 136000000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "ap adress yazar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_adress_yazar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 153000000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "ap adress2 yazar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_adress2_yazar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 141000000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "ap adres sehir yazar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_adres_sehir_yazar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 182000000,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "ap state dropdown secer",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_state_dropdown_secer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 148000000,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "ap adres zip kod yazar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_adres_zip_kod_yazar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10000000,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "pagedown tusuna basar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.pagedown_tusuna_basar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000000,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "\"1\" saniye bekler",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1\"",
-                  "offset": 0
-                }
-              ],
-              "location": "stepdefinitions.DataTableStepDefinitions.saniyeBekler(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 146000000,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "ap country dropdown secer",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_country_dropdown_secer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 142000000,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "bilgi ekleme yapar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.bilgi_ekleme_yapar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 151000000,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "home phone yazar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.home_phone_yazar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 96000000,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "reference alanini temizler",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.reference_alanini_temizler()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 106000000,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "reference yazar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.reference_yazar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1562000000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "ap register butonuna basar",
-            "match": {
-              "location": "stepdefinitions.AutomationPracticeStepDefinitions.ap_register_butonuna_basar()"
+              "location": "dbStepdefinitions.DbReadDBUtils.kullanici_db_utils_ile_sutunundaki_verileri_okur(java.lang.String)"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@db"
+          },
+          {
+            "name": "@dbUtil"
           }
         ]
       }
     ],
-    "name": "US1011_AutomationPractice",
+    "name": "US1014_DbRead",
     "description": "",
-    "id": "us1011-automationpractice",
+    "id": "us1014-dbread",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US1011_AutomationPractice.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/US1014_DbRead.feature",
+    "tags": [
+      {
+        "name": "@db",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

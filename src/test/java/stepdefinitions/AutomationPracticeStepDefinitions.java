@@ -113,16 +113,20 @@ public class AutomationPracticeStepDefinitions {
     public void reference_yazar() {
         automationPracticepage.reference.sendKeys(ConfigReader.getProperty("Ap_referance"));
     }
+
     @Then("ap register butonuna basar")
     public void ap_register_butonuna_basar() {
         automationPracticepage.registerButton.click();
+
     }
-    @And("email kutusuna gecersiz email yazar ve enter'a basar")
-    public void emailKutusunaGecersizEmailYazarVeEnterABasar() {
-        automationPracticepage.emailTextBox.sendKeys(ConfigReader.getProperty("Ap_gecersiz_email")+Keys.ENTER);
+
+    @And("ap email kutusuna invalid e-mail bilgisi yazar ve enter'a tiklar")
+    public void apEmailKutusunaInvalidEMailBilgisiYazarVeEnterATiklar() {
+        automationPracticepage.emailTextBox.sendKeys(ConfigReader.getProperty("Ap_gecersiz_email") + Keys.ENTER);
     }
-    @And("hata mesajini dorular")
-    public void hataMesajiniDorular() {
+
+    @And("ap hata mesaji kisminda hata mesajini dogrular")
+    public void apHataMesajiKismindaHataMesajiniDogrular() {
         Assert.assertEquals(ConfigReader.getProperty("Ap_hata_mesaji"),automationPracticepage.hataYazisi.getText());
     }
 }

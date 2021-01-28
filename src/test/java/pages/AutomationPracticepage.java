@@ -65,4 +65,8 @@ public class AutomationPracticepage {
     public WebElement hataYazisi;
     @FindBy(xpath = "(//button[@type='submit'])[2]")
     public WebElement registerButton;
+
+
+
+
 }

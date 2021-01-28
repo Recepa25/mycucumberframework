@@ -9,7 +9,7 @@
 #        Then hesap olustugunu dogrulayin
 
 Feature: US1011_AutomationPractice
-@wip
+#@wip
   Scenario: TC14_Kullanici_yeni_giris_olusturabilmeli
     When kullanici "Ap_url" anasayfaya gider
     Then Ap sign_in tusuna tiklar
@@ -43,9 +43,15 @@ Feature: US1011_AutomationPractice
 
 
   @automation
+    #http://automationpractice.com/index.php sayfasina gidelim
+    #Cucumber ile asagidaki testi yapalim
+    #        -   Given user web sayfasinda
+    #        -   And user sign in linkine tiklar
+    #        -   And email kutusuna @ iaseti olmayan  e-email adresi yazar ve enter'a tiklar
+    #        - Then error mesajinin Authentication failed. oldugunu dogrulayin
   Scenario: TC_15_Yanlis_mail_ile_giris_yapilamaz
-    When kullanici "Ap_url" anasayfaya gider
-    And Ap sign_in tusuna tiklar
-    And email kutusuna gecersiz email yazar ve enter'a basar
-    And hata mesajini dorular
-    And kullanici sayfayi kapatir
+  When kullanici "Ap_url" anasayfaya gider
+    Then Ap sign_in tusuna tiklar
+    And ap email kutusuna invalid e-mail bilgisi yazar ve enter'a tiklar
+    And ap create an account tusuna basar
+    And ap hata mesaji kisminda hata mesajini dogrular
